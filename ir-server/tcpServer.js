@@ -101,7 +101,7 @@ var server = net.createServer(function(c) {
 
 }); // net.createServer
 
-server.listen(1338, function() {
+server.listen(1338, "0.0.0.0", function() {
   console.log('Server bound', server.address().port);
 });
 
